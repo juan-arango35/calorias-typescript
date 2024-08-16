@@ -6,7 +6,7 @@ const Form = () => {
   const [actividad, setActividad] = useState<Activity>({
     category: 1,
     name: "",
-    calories: 0,
+    calories:0,
   });
 
   const handleChange = (
@@ -20,6 +20,11 @@ const Form = () => {
       [e.target.id]: isNumberField ? +e.target.value : e.target.value,
     });
   };
+
+  const isValidActivity = ()=>{
+    const { name, calories}= actividad
+    return name.trim() !== '' && calories > 0
+  }
 
   return (
     <form className="space-y-5 bg-white shadow p-10 rounded-lg">
@@ -70,8 +75,9 @@ const Form = () => {
       </div>
       <input
         type="submit"
-        className="bg-gray-800 hover:bg-gray-950 w-full p-2 font-bold uppercase text-white cursor-pointer rounded-2xl"
+        className="bg-gray-800 hover:bg-gray-950 w-full p-2 font-bold uppercase text-white cursor-pointer rounded-2xl disabled:opacity-10"
         value="Guardar comida o ejercicio"
+        disabled={!isValidActivity()}
       />
     </form>
   );
