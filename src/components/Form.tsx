@@ -76,7 +76,7 @@ const Form = () => {
       <input
         type="submit"
         className="bg-gray-800 hover:bg-gray-950 w-full p-2 font-bold uppercase text-white cursor-pointer rounded-2xl disabled:opacity-10"
-        value="Guardar comida o ejercicio"
+        value={actividad.category === 1 ? 'Guardar Comida ' : 'Guargar Ejercicio'}
         disabled={!isValidActivity()}
       />
     </form>
