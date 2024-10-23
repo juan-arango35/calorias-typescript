@@ -4,7 +4,7 @@
 Una calculadora de propinas simple construida con **React** y **TypeScript**. Este proyecto demuestra el uso de hooks clave de React (`useState`, `useEffect`) para gestionar el estado y los efectos secundarios en una aplicación frontend. La calculadora permite a los usuarios ingresar el monto de la cuenta, seleccionar un porcentaje de propina y calcular el monto total incluyendo la propina. Este proyecto es guiado por un curso de Udemy, el cual me parecio muy interesante realizarlo además de poner en práctica los tipados que te brindan una gran eficiencia en el código.
 Muy agaradecido con el autor que me brindo la posibilidad de adquirir nuevos conocimientos.
 
-![DEMO](https://calculadora-propinas-tsx.netlify.app/)
+[DEMO](https://calculadora-propinas-tsx.netlify.app/)
 
 ## Características
 
